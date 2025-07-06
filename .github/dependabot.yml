@@ -11,5 +11,5 @@ registries:
   github-packages:
     type: "nuget-feed"
     url: "https://nuget.pkg.github.com/akkch/index.json"
-    username: "${{secrets.GITHUB_ACTOR}}"
-    password: "${{secrets.CI_PAT}}"
+    username: "x-access-token"
+    password: "${{secrets.DEPENDABOT_GITHUB_TOKEN}}"
